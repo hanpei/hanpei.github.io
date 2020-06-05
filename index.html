@@ -1,141 +1,632 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
   
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="NEXTS.top">
+<meta property="og:url" content="https:&#x2F;&#x2F;www.nexts.top&#x2F;index.html">
+<meta property="og:site_name" content="NEXTS.top">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://www.nexts.top/"/>
+
+
+
+
+
   <title>NEXTS.top</title>
-
-  
-  <meta name="author" content="hanpei">
   
 
-  
 
-  
 
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  
 
-  <meta property="og:site_name" content="NEXTS.top"/>
 
-  
-  <meta property="og:image" content="/favicon.ico"/>
-  
 
-  <link href="/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="NEXTS.top" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
 </head>
 
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-<body>
-<div class="blog">
-  <div class="content">
+  
+  
+    
+  
 
-    <header>
-  <div class="site-branding">
-    <h1 class="site-title">
-      <a href="/">NEXTS.top</a>
-    </h1>
-    <p class="site-description"></p>
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">NEXTS.top</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
   </div>
-  <nav class="site-navigation">
-    <ul>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
       
-        <li><a href="/">主页</a></li>
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
       
-        <li><a href="/archives">归档</a></li>
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
       
     </ul>
-  </nav>
-</header>
-
-    <main class="site-main posts-loop">
-    
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2019/11/21/shanghai-marathon/"><span>2019上马之行</span></a></h3>
-    
   
 
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2019/11/21/shanghai-marathon/" rel="bookmark">
-        <time class="entry-date published" datetime="2019-11-21T02:54:39.000Z">
-          2019-11-21
-        </time>
-      </a>
-    </span>
-  </div>
-
-
   
+</nav>
 
-  <div class="article-content">
-    <div class="entry">
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
       
-        <h2 id="果然是国内数一数二的马拉松赛事呀"><a href="#果然是国内数一数二的马拉松赛事呀" class="headerlink" title="果然是国内数一数二的马拉松赛事呀"></a>果然是国内数一数二的马拉松赛事呀</h2><p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g95hhvh62xj30sg0lcgph.jpg" alt="3C362358-0A2B-458B-9950-893B34353EFA_1_105_c"></p>
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.nexts.top/2020/06/05/centos-apps-installation/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hanpei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NEXTS.top">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/05/centos-apps-installation/" itemprop="url">centos服务器各种应用安装</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-05T21:43:33+08:00">
+                2020-06-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li>java</li>
+<li>mysql</li>
+<li>yum源更换镜像</li>
+<li>nginx</li>
+<li>redis</li>
+<li>ssh证书Let’s Encrypt</li>
+</ul>
+<hr>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://download.oracle.com/otn/java/jdk/8u251-b08/3d5a2bb8f8d4428bbe94aed7ec7ae784/jdk-8u251-linux-x64.tar.gz\?AuthParam\=1591100127_ba63c8b31debe96353a7ee64662e8a2f</span><br></pre></td></tr></table></figure>
+
+<p><strong>下载链接需要重新替换</strong><br><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 创建安装目录</span></span><br><span class="line">mkdir /usr/<span class="built_in">local</span>/java/</span><br><span class="line"><span class="comment">## 解压至安装目</span></span><br><span class="line">tar -zxvf jdk-8u171-linux-x64.tar.gz -C /usr/<span class="built_in">local</span>/java/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开文件</span></span><br><span class="line">vim /etc/profile</span><br><span class="line"><span class="comment"># 在末尾添加</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/<span class="built_in">local</span>/java/jdk1.8.0_251</span><br><span class="line"><span class="built_in">export</span> JRE_HOME=<span class="variable">$&#123;JAVA_HOME&#125;</span>/jre</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$&#123;JAVA_HOME&#125;</span>/lib:<span class="variable">$&#123;JRE_HOME&#125;</span>/lib</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$&#123;JAVA_HOME&#125;</span>/bin:<span class="variable">$PATH</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#使环境变量生效</span></span><br><span class="line"><span class="built_in">source</span> /etc/profile</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加软链接</span></span><br><span class="line">ln -s /usr/<span class="built_in">local</span>/java/jdk1.8.0_251/bin/java /usr/bin/java</span><br><span class="line"><span class="comment"># 检查</span></span><br><span class="line">java -version</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h2 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h2><blockquote>
+<p>MySQL 被 Oracle 收购后，CentOS 的镜像仓库中提供的默认的数据库也变为了 MariaDB</p>
+</blockquote>
+<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 检查MariaDB</span></span><br><span class="line">shell&gt; rpm -qa|grep mariadb</span><br><span class="line">mariadb-server-5.5.60-1.el7_5.x86_64</span><br><span class="line">mariadb-5.5.60-1.el7_5.x86_64</span><br><span class="line">mariadb-libs-5.5.60-1.el7_5.x86_64</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除mariadb</span></span><br><span class="line">如果不存在（上面检查结果返回空）则跳过步骤</span><br><span class="line">shell&gt; rpm -e --nodeps mariadb-server</span><br><span class="line">shell&gt; rpm -e --nodeps mariadb</span><br><span class="line">shell&gt; rpm -e --nodeps mariadb-libs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 0.下载</span></span><br><span class="line">wget <span class="string">'https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm'</span></span><br><span class="line"><span class="comment">#	1.添加Mysql5.7仓库</span></span><br><span class="line">sudo rpm -ivh https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm</span><br><span class="line"></span><br><span class="line"><span class="comment">#	2.确认Mysql仓库成功添加</span></span><br><span class="line">sudo yum repolist all | grep mysql | grep enabled</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果展示像下面,则表示成功添加仓库:</span></span><br><span class="line">mysql-connectors-community/x86_64  MySQL Connectors Community    enabled:     51</span><br><span class="line">mysql-tools-community/x86_64       MySQL Tools Community         enabled:     63</span><br><span class="line">mysql57-community/x86_64           MySQL 5.7 Community Server    enabled:    267</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开始安装Mysql5.7</span></span><br><span class="line">sudo yum -y install mysql-community-server</span><br></pre></td></tr></table></figure>
+
+<h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 启动</span></span><br><span class="line">sudo systemctl start mysqld</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置系统启动时自动启动</span></span><br><span class="line">sudo systemctl <span class="built_in">enable</span> mysqld</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看启动状态</span></span><br><span class="line">sudo systemctl status mysqld</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><h4 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># MySQL第一次启动后会创建超级管理员账号root@localhost，初始密码存储在日志文件中：</span></span><br><span class="line">shell&gt; sudo grep ‘temporary password’ /var/<span class="built_in">log</span>/mysqld.log</span><br><span class="line"></span><br><span class="line">shell&gt; mysql -uroot -p</span><br><span class="line"><span class="comment"># 修改密码</span></span><br><span class="line">mysql&gt; ALTER USER ‘root’@‘localhost’ IDENTIFIED BY ‘新密码’;</span><br></pre></td></tr></table></figure>
+
+<h4 id="允许root远程访问"><a href="#允许root远程访问" class="headerlink" title="允许root远程访问"></a>允许root远程访问</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; GRANT ALL PRIVILEGES ON *.* TO &apos;root&apos;@&apos;%&apos; IDENTIFIED BY &apos;123456&apos; WITH GRANT OPTION;</span><br><span class="line">mysql&gt; FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure>
+
+<h4 id="设置编码"><a href="#设置编码" class="headerlink" title="设置编码"></a>设置编码</h4><p>编辑/etc/my.cnf，[mysqld]节点增加以下代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">character_set_server=utf8</span><br><span class="line">init-connect=‘SET NAMES utf8’</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>参考: <a href="https://juejin.im/post/5d07cf13f265da1bd522cfb6#heading-24" target="_blank" rel="noopener">CentOS安装MySQL详解 - 掘金</a></p>
+</blockquote>
+<hr>
+<h2 id="yum源"><a href="#yum源" class="headerlink" title="yum源"></a>yum源</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ll /etc/yum.repos.d/</span><br><span class="line"><span class="comment"># 备份</span></span><br><span class="line">mkdir /opt/centos-yum.bak</span><br><span class="line">mv /etc/yum.repos.d/* /opt/centos-yum.bak/</span><br><span class="line"></span><br><span class="line"><span class="comment">#下载aliyun yum repo</span></span><br><span class="line"><span class="comment"># centos7</span></span><br><span class="line">wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 清缓存</span></span><br><span class="line">yum clean all</span><br><span class="line">yum makecache</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h2 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h2><h3 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># EPEL 仓库中有 Nginx 的安装包。</span></span><br><span class="line">sudo yum install epel-release</span><br><span class="line">sudo yum install nginx</span><br></pre></td></tr></table></figure>
+
+<h3 id="启动-1"><a href="#启动-1" class="headerlink" title="启动"></a>启动</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#设置 Nginx 开机启动：</span></span><br><span class="line">sudo systemctl <span class="built_in">enable</span> nginx</span><br><span class="line"></span><br><span class="line"><span class="comment">#启动 Nginx：</span></span><br><span class="line">sudo systemctl start nginx</span><br><span class="line"><span class="comment"># 通过运行以下命令，来检查 Nginx 的运行状态：</span></span><br><span class="line">sudo systemctl status nginx</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="redis"><a href="#redis" class="headerlink" title="redis"></a>redis</h2><h3 id="安装-3"><a href="#安装-3" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#下载fedora的epel仓库</span></span><br><span class="line">yum install epel-release</span><br><span class="line"><span class="comment"># 安装redis数据库</span></span><br><span class="line">yum install redis</span><br></pre></td></tr></table></figure>
+
+<h3 id="启动-2"><a href="#启动-2" class="headerlink" title="启动"></a>启动</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 常见命令介绍</span></span><br><span class="line">systemctl start redis <span class="comment">#启动服务</span> </span><br><span class="line">systemctl stop redis  <span class="comment">#停止服务</span></span><br><span class="line">systemctl restart redis  <span class="comment">#重启服务</span></span><br><span class="line">systemctl status redis   <span class="comment">#查看服务状态</span></span><br><span class="line">systemctl <span class="built_in">enable</span> redis   <span class="comment">#设置开机自启动</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h3><blockquote>
+<p>设置redis 远程连接和密码<br>vi /etc/redis.conf<br>a.找到protected-mode设置为no<br>        protected-mode no<br>b. bind 设置为0.0.0.0<br>        bind 0.0.0.0<br>c.取消requirepass注释,设置密码<br>        requirepass “password” </p>
+</blockquote>
+<hr>
+<h2 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a>Let’s Encrypt</h2><p><strong>需要先停止nginx服务</strong><br>生成证书验证域名的时候，需要启用443端口。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装工具</span></span><br><span class="line">yum install certbot</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取证书， 按流程填写</span></span><br><span class="line">sudo letsencrypt certonly --standalone</span><br><span class="line"><span class="comment"># 证书路径 /etc/letsencrypt/live/</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 自动更新测试</span></span><br><span class="line">certbot renew --dry-run</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定时任务查看</span></span><br><span class="line">crontab -l</span><br><span class="line"><span class="comment"># 新建</span></span><br><span class="line">crontab -e</span><br><span class="line"><span class="comment"># 隔 两个月的 凌晨 2:15 执行 更新操作，需要先停止ngxin在启动</span></span><br><span class="line">15 2 * */2 * certbot renew --pre-hook <span class="string">"sudo systemctl stop nginx"</span> --post-hook <span class="string">"sudo systemctl start nginx"</span>  &gt;&gt; /var/<span class="built_in">log</span>/certbot-renew.log</span><br></pre></td></tr></table></figure>
+
+
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.nexts.top/2019/11/21/shanghai-marathon/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hanpei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NEXTS.top">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/21/shanghai-marathon/" itemprop="url">2019上马之行</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-21T10:54:39+08:00">
+                2019-11-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="果然是国内数一数二的马拉松赛事呀"><a href="#果然是国内数一数二的马拉松赛事呀" class="headerlink" title="果然是国内数一数二的马拉松赛事呀"></a>果然是国内数一数二的马拉松赛事呀</h2><p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g95hhvh62xj30sg0lcgph.jpg" alt="3C362358-0A2B-458B-9950-893B34353EFA_1_105_c"></p>
 <p>上海真是一个洋气的好地方。我们选择住在了起点外滩附近的<strong>Les Suites Orient酒店</strong>，也不知道为啥门口看半天也找不到中文的名字，东方商旅精品酒店….</p>
-        
-          <p><a class="excerpt-btn" href="2019/11/21/shanghai-marathon/"><span>阅读全文</span></a></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/11/21/shanghai-marathon/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
 
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
+    
 
     
 
     
-    
 
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/running/">running</a>
-    </span>
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2019/10/25/hexo-blog-config/"><span>hexo blog 配置</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2019/10/25/hexo-blog-config/" rel="bookmark">
-        <time class="entry-date published" datetime="2019-10-25T05:19:48.000Z">
-          2019-10-25
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
+    <footer class="post-footer">
       
-        <h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><h3 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h3><ol>
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.nexts.top/2019/10/25/hexo-blog-config/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hanpei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NEXTS.top">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/25/hexo-blog-config/" itemprop="url">hexo blog 配置</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-25T13:19:48+08:00">
+                2019-10-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><h3 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h3><ol>
 <li>安装nginx</li>
 <li>配置nginx <code>/etc/nginx/nginx.conf</code> 或者 <code>/etc/nginx/conf.d/</code>下的<code>*.conf</code></li>
 <li>ssl配置<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 443 ssl;</span><br><span class="line">    server_name www.domain.com;</span><br><span class="line">    <span class="comment"># ssl 配置</span></span><br><span class="line">    ssl_certificate 1_www.xxxxxxx.crt; <span class="comment"># 改为自己申请得到的 crt 文件的名称</span></span><br><span class="line">    ssl_certificate_key 2_www.xxxxxx.key; <span class="comment"># 改为自己申请得到的 key 文件的名称</span></span><br><span class="line">    ssl_session_timeout 5m;</span><br><span class="line">    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;</span><br><span class="line">    ssl_prefer_server_ciphers on;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">    	root /var/www/hexo;</span><br><span class="line">      index index.html index.htm;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -159,51 +650,125 @@
 <li>修改theme路径中的_config.yml</li>
 </ol>
 
+          
+        
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
+  
+  
+  
+  </article>
 
-  <div class="article-footer">
-    <div class="article-meta pull-left">
 
     
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
+      
 
   
-    
-    <h3 class="article-title"><a href="/2019/10/25/hello-world/"><span>Hello World</span></a></h3>
-    
+
+  
+  
   
 
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2019/10/25/hello-world/" rel="bookmark">
-        <time class="entry-date published" datetime="2019-10-25T03:09:22.298Z">
-          2019-10-25
-        </time>
-      </a>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.nexts.top/2019/10/25/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hanpei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </div>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NEXTS.top">
+    </span>
 
-  
+    
+      <header class="post-header">
 
-  <div class="article-content">
-    <div class="entry">
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/25/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-25T11:09:22+08:00">
+                2019-10-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
@@ -217,46 +782,323 @@
 
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
+          
+        
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
   </div>
 
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
+  <aside id="sidebar" class="sidebar">
     
+    <div class="sidebar-inner">
 
-    
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">hanpei</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives%7C%7Carchive">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
 
     </div>
-
-    
-  </div>
-</article>
+  </aside>
 
 
-
-
-<nav class="pagination">
-  
-  
-</nav>
+        
+      </div>
     </main>
 
-    <footer class="site-footer">
-  <p class="site-info">
-    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
-    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
-    </br>
-    
-    &copy; 2020 hanpei
-    
-  </p>
-  <p><a href="http://beian.miit.gov.cn" target="_blank">京ICP备18030026号-1</a></p>
-</footer>
-    
-  </div>
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">hanpei</span>
+
+  
 </div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
