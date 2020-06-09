@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="running," />
+  <meta name="keywords" content="config,centos,java," />
 
 
 
@@ -86,18 +86,16 @@
 
 
 
-<meta name="description" content="果然是国内数一数二的马拉松赛事呀 上海真是一个洋气的好地方。我们选择住在了起点外滩附近的Les Suites Orient酒店，也不知道为啥门口看半天也找不到中文的名字，东方商旅精品酒店….">
-<meta name="keywords" content="running">
+<meta name="description" content="systemd启动java应用程序test.service 12345678910111213141516# &#x2F;etc&#x2F;systemd&#x2F;system# 新建test.service， 替换成自己想要的app名字[Unit]Description=TestJavaAfter=network.target[Service]Type=forkingExecStart=&#x2F;var&#x2F;www&#x2F;test&#x2F;star">
+<meta name="keywords" content="config,centos,java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2019上马之行">
-<meta property="og:url" content="https:&#x2F;&#x2F;www.nexts.top&#x2F;2019&#x2F;11&#x2F;21&#x2F;shanghai-marathon&#x2F;index.html">
+<meta property="og:title" content="systemd运行java jar应用">
+<meta property="og:url" content="https:&#x2F;&#x2F;www.nexts.top&#x2F;2020&#x2F;06&#x2F;09&#x2F;centos-systemctl-java&#x2F;index.html">
 <meta property="og:site_name" content="NEXTS.top">
-<meta property="og:description" content="果然是国内数一数二的马拉松赛事呀 上海真是一个洋气的好地方。我们选择住在了起点外滩附近的Les Suites Orient酒店，也不知道为啥门口看半天也找不到中文的名字，东方商旅精品酒店….">
+<meta property="og:description" content="systemd启动java应用程序test.service 12345678910111213141516# &#x2F;etc&#x2F;systemd&#x2F;system# 新建test.service， 替换成自己想要的app名字[Unit]Description=TestJavaAfter=network.target[Service]Type=forkingExecStart=&#x2F;var&#x2F;www&#x2F;test&#x2F;star">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;large&#x2F;006y8mN6ly1g95hhvh62xj30sg0lcgph.jpg">
-<meta property="og:updated_time" content="2020-06-05T13:47:42.834Z">
+<meta property="og:updated_time" content="2020-06-09T14:36:32.260Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;large&#x2F;006y8mN6ly1g95hhvh62xj30sg0lcgph.jpg">
 
 
 
@@ -127,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="https://www.nexts.top/2019/11/21/shanghai-marathon/"/>
+  <link rel="canonical" href="https://www.nexts.top/2020/06/09/centos-systemctl-java/"/>
 
 
 
 
 
-  <title>2019上马之行 | NEXTS.top</title>
+  <title>systemd运行java jar应用 | NEXTS.top</title>
   
 
 
@@ -260,7 +258,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.nexts.top/2019/11/21/shanghai-marathon/">
+    <link itemprop="mainEntityOfPage" href="https://www.nexts.top/2020/06/09/centos-systemctl-java/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hanpei">
@@ -277,7 +275,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2019上马之行</h1>
+          <h1 class="post-title" itemprop="name headline">systemd运行java jar应用</h1>
         
 
         <div class="post-meta">
@@ -289,8 +287,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-21T10:54:39+08:00">
-                2019-11-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-09T22:24:59+08:00">
+                2020-06-09
               </time>
             
 
@@ -327,14 +325,16 @@
       
 
       
-        <h2 id="果然是国内数一数二的马拉松赛事呀"><a href="#果然是国内数一数二的马拉松赛事呀" class="headerlink" title="果然是国内数一数二的马拉松赛事呀"></a>果然是国内数一数二的马拉松赛事呀</h2><p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g95hhvh62xj30sg0lcgph.jpg" alt="3C362358-0A2B-458B-9950-893B34353EFA_1_105_c"></p>
-<p>上海真是一个洋气的好地方。我们选择住在了起点外滩附近的<strong>Les Suites Orient酒店</strong>，也不知道为啥门口看半天也找不到中文的名字，东方商旅精品酒店….</p>
-<a id="more"></a>
+        <h2 id="systemd启动java应用程序"><a href="#systemd启动java应用程序" class="headerlink" title="systemd启动java应用程序"></a>systemd启动java应用程序</h2><p><strong>test.service</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"># /etc/systemd/system</span><br><span class="line"># 新建test.service， 替换成自己想要的app名字</span><br><span class="line">[Unit]</span><br><span class="line">Description=TestJava</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">ExecStart=/var/www/test/start.sh</span><br><span class="line">ExecStop=/var/www/test/stop.sh</span><br><span class="line"># 除了使用systemctl stop test.service,其他情况退出会重启服务</span><br><span class="line">Restart=always</span><br><span class="line">RestartSec=5</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
 
-<p>今年上马的比赛日当天25度，跑起来体感温度感觉小30度了，30km之后的三座立交桥往返真的太虐了，本着上坡溜达下坡颠儿的方针才熬了过去，39km之后路边摄影师数量激增，感觉一下子又能跑起来了。其他的就没什么记忆了，毕竟离北马结束才两个星期，心理和身体上只有一种感觉，就是累啊。</p>
-<p>但这还不是最累的…</p>
-<p>相比于这次马拉松4个半小时而言，第二天迪士尼的一天才是最刺激的。光飞跃地平线排队就3个半小时…</p>
+<p><strong>start.sh</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"start test service"</span></span><br><span class="line">nohup /usr/bin/java -jar /var/www/<span class="built_in">test</span>/test.jar --server.port=9090 --spring.profiles.active=<span class="built_in">test</span> &gt;/dev/null 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="built_in">echo</span> $! &gt; /var/www/<span class="built_in">test</span>/app.pid</span><br></pre></td></tr></table></figure>
 
+<p><strong>stop.sh</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#/bin/sh</span></span><br><span class="line">PID=$(cat /var/www/<span class="built_in">test</span>/app.pid)</span><br><span class="line"><span class="built_in">kill</span> -9 <span class="variable">$PID</span></span><br><span class="line">rm -fr /var/www/<span class="built_in">test</span>/app.pid</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># reload</span></span><br><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl start test.service</span><br><span class="line">systemctl stop test.service</span><br><span class="line">systemctl status test.service</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -351,7 +351,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/running/" rel="tag"># running</a>
+            <a href="/tags/config/" rel="tag"># config</a>
+          
+            <a href="/tags/centos/" rel="tag"># centos</a>
+          
+            <a href="/tags/java/" rel="tag"># java</a>
           
         </div>
       
@@ -364,8 +368,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/10/25/hexo-blog-config/" rel="next" title="hexo blog 配置">
-                <i class="fa fa-chevron-left"></i> hexo blog 配置
+              <a href="/2020/06/05/centos-apps-installation/" rel="next" title="centos服务器各种应用安装">
+                <i class="fa fa-chevron-left"></i> centos服务器各种应用安装
               </a>
             
           </div>
@@ -373,10 +377,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/06/05/centos-apps-installation/" rel="prev" title="centos服务器各种应用安装">
-                centos服务器各种应用安装 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -499,7 +499,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#果然是国内数一数二的马拉松赛事呀"><span class="nav-number">1.</span> <span class="nav-text">果然是国内数一数二的马拉松赛事呀</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#systemd启动java应用程序"><span class="nav-number">1.</span> <span class="nav-text">systemd启动java应用程序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">2.</span> <span class="nav-text">使用</span></a></li></ol></div>
             
 
           </div>
